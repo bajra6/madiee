@@ -1,0 +1,18 @@
+.loginpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: -8px;
+  background-color: blueviolet;
+}
+
+.logindabba {
+  border: 2px solid slategrey;
+  padding: 4rem;
+  flex-direction: column;
+}
+
+.loginbuttons {
+  text-align: center;
+}
