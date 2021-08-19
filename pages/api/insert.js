@@ -5,7 +5,7 @@ export default async function handler(req, res){
 
     const data = req.body;
 
-    const response = await db.collection("roomX").insertOne(data);
+    const response = await db.collection(req.body.room).insertOne(data);
     res.json(response)
-    
+
 }
