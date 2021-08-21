@@ -10,11 +10,15 @@ const Leaderboard = () => {
     const router = useRouter()
 
     useEffect(() => {
-        axios.post("/api/getall", {room: localStorage.getItem("room")})
-            .then((response) => {
-                setData(response.data);
-            })
-            .catch((error) => console.log(error))
+        const interval = setInterval(() => {
+            axios.post("/api/getall", {room: localStorage.getItem("room")})
+                .then((response) => {
+                    setData(response.data);
+                })
+                .catch((error) => console.log(error))
+            }, 1000);
+
+            return () => clearInterval(interval);
     }, [])
     
     function handleClick(){
@@ -22,7 +26,7 @@ const Leaderboard = () => {
         .then((response) => {
             router.push("/details")
         })
-        .catch((err) => console.log(err))
+        .catch((err) => router.push("/details"))
     }
 
     function handleClickquit(){
@@ -30,7 +34,7 @@ const Leaderboard = () => {
         .then((response) => {
             router.push("/")
         })
-        .catch((err) => console.log(err))
+        .catch((err) => router.push("/"))
     }
 
     data.sort((a,b) => (a.p < b.p) ? 1 : ((b.p < a.p) ? -1 : 0))
