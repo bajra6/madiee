@@ -19,11 +19,13 @@ export default function Home() {
 
   return (
     <div className={styles.loginpage}>
+      <div className={styles.logo}>2Truths1Lie</div>
+      <div className={styles.caption}>We make rules as we go</div>
       <div className={styles.logindabba}>
-        <div><input type="text" value={Username} onChange={(event) => setUsername(event.target.value)} placeholder="User Name"></input></div>
-        <div><input type="text" value={Room} onChange={(event) => setRoom(event.target.value)} placeholder="Room"></input></div>
+        <div><input className={styles.input} type="text" value={Username} onChange={(event) => setUsername(event.target.value)} placeholder="User Name"></input></div>
+        <div><input className={styles.input} type="text" value={Room} onChange={(event) => setRoom(event.target.value)} placeholder="Room"></input></div>
         <div className={styles.loginbuttons}>
-          <button onClick={insert}>Enter</button>
+          <button onClick={insert} className={styles.button}>Enter</button>
         </div>
       </div>
     </div>

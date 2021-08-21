@@ -1,0 +1,86 @@
+.leaders {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.leaderswrapper {
+  margin: -8px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../public/wave.svg"), url("../public/wave2.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+}
+
+.leaderssubwrapper {
+  border: 1px solid rgb(37, 29, 16);
+  background-color: beige;
+  border-radius: 1rem;
+  padding: 3rem;
+  height: 50vh;
+  width: 50vw;
+  overflow: auto;
+}
+
+.name {
+  margin-left: 7rem;
+}
+
+.point {
+  margin-left: 9rem;
+}
+
+.rank {
+  margin-left: 3rem;
+}
+
+.image {
+  margin-left: 4rem;
+}
+
+.logo {
+  position: absolute;
+  font-size: 2rem;
+  left: 1.5rem;
+  top: 1.5rem;
+  background-color: rgba(245, 245, 245, 0.8);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.caption {
+  position: absolute;
+  font-size: 1.3rem;
+  left: 1.5rem;
+  top: 5rem;
+  background-color: rgba(245, 245, 245, 0.9);
+}
+
+.playagain {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: beige;
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.quit {
+  position: absolute;
+  bottom: 3rem;
+  background-color: beige;
+  border-radius: 1rem;
+  left: 3rem;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

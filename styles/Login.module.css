@@ -1,18 +1,50 @@
 .loginpage {
   display: flex;
+  background-image: url("../public/wave.svg"), url("../public/wave2.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: -8px;
-  background-color: blueviolet;
+  background-color: whitesmoke;
 }
 
 .logindabba {
   border: 2px solid slategrey;
+  border-radius: 2rem;
   padding: 4rem;
   flex-direction: column;
 }
 
 .loginbuttons {
   text-align: center;
+}
+
+.button {
+  padding: 0.5rem 1.5rem;
+}
+
+.input {
+  margin: 1rem;
+  height: 1.5rem;
+}
+
+.logo {
+  position: absolute;
+  font-size: 2rem;
+  left: 1.5rem;
+  top: 1.5rem;
+  background-color: rgba(245, 245, 245, 0.8);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.caption {
+  position: absolute;
+  font-size: 1.3rem;
+  left: 1.5rem;
+  top: 5rem;
+  background-color: rgba(245, 245, 245, 0.9);
 }

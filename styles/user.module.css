@@ -1,0 +1,22 @@
+.user {
+  display: inline;
+  height: 200px;
+  width: 200px;
+  margin: 1.5rem;
+  text-align: center;
+  border: 1px solid burlywood;
+  background-color: beige;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+}
+
+.name {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}

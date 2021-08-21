@@ -1,0 +1,20 @@
+.logo {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.play {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  font-size: 2rem;
+  border: 1px solid burlywood;
+  background-color: beige;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+.play:hover {
+  background-color: burlywood;
+  cursor: pointer;
+}

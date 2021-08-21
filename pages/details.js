@@ -18,7 +18,7 @@ const Details = () => {
         Username = setUsername(localStorage.getItem("name"))
         Room = setRoom(localStorage.getItem("room"))
 
-        console.log(Username, Room)
+        // console.log(Username, Room)
 
         if (typeof window !== "undefined") {
             if(Username === null || Room === null){
@@ -38,16 +38,25 @@ const Details = () => {
             l1: l1,
             p: 0
           })
-          .then((response) => console.log(response))
+          .then((response) => {
+              console.log(response)
+              console.log(response.data.insertedId)
+              localStorage.setItem("id", response.data.insertedId)
+              router.push("/room")
+            })
           .catch((error) => console.log("registration unsuccessful"))
     }
 
     return ( 
-        <div className="detailspage">
-            <input type="text" placeholder="truth" value={t1} onChange={(event) => setT1(event.target.value)}></input>
-            <input type="text" placeholder="truth" value={t2} onChange={(event) => setT2(event.target.value)}></input>
-            <input type="text" placeholder="lie" value={l1} onChange={(event) => setL1(event.target.value)}></input>
-            <button onClick={handleSubmit}>Submit</button>
+        <div className={styles.detailspage}>
+            <div className={styles.logo}>2Truth1Lie</div>
+            <div className={styles.caption}>We make rules as we go</div>
+            <div className={styles.wrapper}>
+                <textarea className={styles.input} type="text" placeholder="truth" value={t1} onChange={(event) => setT1(event.target.value)}></textarea>
+                <textarea className={styles.input} type="text" placeholder="truth" value={t2} onChange={(event) => setT2(event.target.value)}></textarea>
+                <textarea className={styles.input} type="text" placeholder="lie" value={l1} onChange={(event) => setL1(event.target.value)}></textarea>
+                <button className={styles.button} onClick={handleSubmit}>Submit</button>
+            </div>
         </div> );
 }
  

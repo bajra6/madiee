@@ -1,0 +1,64 @@
+.gameroom {
+  height: 100vh;
+  background-color: beige;
+  margin: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../public/wave2.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  position: absolute;
+  font-size: 2rem;
+  left: 1.5rem;
+  top: 1.5rem;
+  background-color: rgba(245, 245, 245, 0.8);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.caption {
+  position: absolute;
+  font-size: 1.3rem;
+  left: 1.5rem;
+  top: 5rem;
+  background-color: rgba(245, 245, 245, 0.9);
+}
+
+.truths {
+  height: 10vh;
+  width: 40vw;
+  border: 1px solid burlywood;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  background-color: beige;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.truths:hover {
+  background-color: burlywood;
+}
+
+.points {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  background-color: beige;
+}
+
+.button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  align-self: flex-end;
+}
+
+.buttonwrapper {
+  text-align: right;
+}

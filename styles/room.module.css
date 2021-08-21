@@ -1,0 +1,30 @@
+.room {
+  min-height: 100vh;
+  margin: -8px;
+  margin-top: -8px;
+  padding: 0;
+  background-color: beige;
+  background-image: url("../public/wave2.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.title {
+  width: 50vw;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.people {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
